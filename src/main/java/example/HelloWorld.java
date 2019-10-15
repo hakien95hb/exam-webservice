@@ -1,4 +1,7 @@
 package example;
+import example.entity.Employee;
+import example.service.EmployeeService;
+
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
@@ -12,8 +15,7 @@ public class HelloWorld {
     return result;
   }
   public static void main(String[] argv) {
-    Object implementor = new HelloWorld ();
-    String address = "http://localhost:9000/HelloWorld";
-    Endpoint.publish(address, implementor);
+    String employeeService = "http://localhost:9000/employee-service";
+    Endpoint.publish(employeeService, new EmployeeService());
   }
 }

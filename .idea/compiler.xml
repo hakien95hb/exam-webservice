@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="exam-webservice" target="1.5" />
+      <module name="exam-webservice" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
